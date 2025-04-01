@@ -1,0 +1,77 @@
+/* Centering Slider */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  touch-action: pan-y; /* Improves swipe performance */
+}
+
+/* Wrapper for sliding effect */
+.slider {
+  width: 80%;
+  overflow: hidden;
+}
+
+/* Track for sliding animation */
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Individual experience box */
+.experience-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  min-width: 100%;
+  text-align: left;
+}
+
+/* Button positioning */
+.nav-button {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-button.left {
+  left: 10px;
+}
+
+.nav-button.right {
+  right: 10px;
+}
+
+.nav-button:hover {
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skillr-section {
+    margin-top: 550px;
+  }
+
+  .slider{
+    width: 80%;
+  }
+  .exp-btn{
+    display: flex;
+    justify-content: center;
+  }
+  .experience-box {
+    height: 460px;
+    width: 320px;
+  }
+}

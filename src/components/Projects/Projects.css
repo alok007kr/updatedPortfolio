@@ -1,0 +1,91 @@
+/* Centering the Slider */
+.slider-container-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    touch-action: pan-y; /* Improves swipe performance */
+  }
+  
+  /* Wrapper for sliding effect */
+  .sliderp {
+    width: 80%;
+    overflow: hidden;
+  }
+  
+  /* Track for sliding animation */
+  .slide-track-p {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Individual project box */
+  .project-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    min-width: 100%;
+    text-align: left;
+  }
+  .p-btn{
+    display: flex;
+    justify-content: center;
+}
+  
+  /* Button positioning */
+  .nav-button {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .nav-button.left {
+    left: 10px;
+  }
+  
+  .nav-button.right {
+    right: 10px;
+  }
+  
+  .nav-button:hover {
+    color: black;
+  }
+
+  .skillp-section{
+    margin-top: 100px;
+  }
+  .exp-btn{
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skillp-section {
+      margin-top: 80px;
+    }
+    .sliderp{
+        width: 80%;
+    }
+  
+    .project-box {
+      height: 380px;
+      width: 320px;
+    }
+    .p-btn{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  

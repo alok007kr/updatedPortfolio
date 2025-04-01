@@ -1,0 +1,102 @@
+.hero-section{
+    margin-top: 6rem;
+    margin-left: 2rem;
+    height: 78vh;
+}
+.my-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* CSS */
+.button-24 {
+  background: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: black;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+.child1 {
+    flex: 5; /* 70% width */
+    box-sizing: border-box; /* Ensures padding and border are included */
+    /* border: 1px solid #000;  */
+    /* text-align: center; */
+  }
+  .child2 {
+    flex: 1; /* Adjust space for the image */
+    display: flex;
+    margin-right: 5rem;
+    margin-left: 10rem;
+    margin-top: -3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Outer Circle Styling */
+.outer-circle {
+    width: 200px; /* Equal width */
+    height: 200px; /* Equal height */
+    border: 7px solid rgb(220, 215, 215); /* Blue solid border */
+    border-radius: 50%; /* Makes it circular */
+    overflow: hidden; /* Ensures the image does not spill out */
+    display: flex; /* Centers the image */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Image Styling */
+  .circle-image {
+    width: 100%; /* Fully fills parent container */
+    height: 100%; /* Fully fills parent container */
+    object-fit: cover; /* Ensures the image maintains correct proportions */
+    border-radius: 50%; /* Keeps the image circular */
+  }
+  
+
+  @media (max-width: 768px) {
+    .hero-section{
+        text-align: center;
+    }
+    .name-section{
+        margin-top: -10px;
+    }
+    .my-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .child2{
+        margin-top: 3rem;
+        margin-left: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }

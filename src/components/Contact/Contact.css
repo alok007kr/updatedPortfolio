@@ -1,0 +1,45 @@
+/* Centering the form container */
+.contact-container {
+    margin-top: -10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+  }
+  
+  /* Styling the form */
+  .contact-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+  }
+  
+  /* Input fields styling */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Textarea should have more height */
+  .contact-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+ 
+  
+  
+  
+  @media(max-width: 768px){
+    .contact-container{
+        margin-top: -10rem;
+    }
+  }
