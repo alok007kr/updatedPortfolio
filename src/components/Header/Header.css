@@ -1,4 +1,4 @@
-.head-container{
+/* .head-container{
     display: flex;
     justify-content: space-between;
     margin-top: 8px;
@@ -41,7 +41,7 @@
     margin-right: 30px;
 }
 .hamburger {
-    display: none; /* Hide by default */
+    display: none;
     font-size: 24px;
     cursor: pointer;
   }
@@ -71,11 +71,11 @@
 
 
 
-/* Mobile Design */
+
 @media (max-width: 768px) {
     .hamburger{
         display: block;
-        /* overflow-x: hidden; */
+       
     }
     .nav-link{
         margin-top: 30px;
@@ -86,13 +86,13 @@
         justify-content: center;
         right: 50%;
         width: 200px;
-        /* height: 100px; */
+        
         padding: 10px;
-        /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+        
     }
 
     .nav-link.active {
-        display: none; /* Show menu when active */
+        display: none; 
       }
 
      
@@ -100,4 +100,108 @@
 }
 
 
+ */
 
+
+ .head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  }
+
+  
+  .logo{
+    display: flex;
+    align-items: baseline;
+}
+.logo-name{
+    margin-right: 3px;
+}
+  .circle{ 
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: red;
+}
+  
+  /* Navbar Links */
+  .nav-link ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Navigation Links in One Line for Desktop */
+  .nav-link ul li {
+    margin: 0 15px;
+  }
+  
+  .nav-link ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  .nav-link ul li a:hover{
+    color: grey;
+}
+  
+  /* --- Mobile Responsive Styling --- */
+  @media (max-width: 768px) {
+    /* Hide the menu by default */
+    .nav-link {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: white;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    /* Show menu when active */
+    .nav-link.active {
+      display: flex;
+      flex-direction: column;  /* Stack items vertically */
+      align-items: center;
+    }
+  
+    /* Each list item should take full width */
+    .nav-link ul {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .nav-link ul li {
+      padding: 10px 0;
+      width: 100%;
+    }
+    .nav-link ul li a:hover{
+        color: grey;
+    }
+  
+    .hamburger {
+      display: block;
+      background: rgb(204, 204, 204);
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: white;
+    }
+  }
+  
+  /* Desktop View */
+  @media (min-width: 769px) {
+    .hamburger {
+      display: none; /* Hide hamburger on desktop */
+    }
+  
+    .nav-link {
+      display: flex; /* Show links */
+    }
+  }
+  
